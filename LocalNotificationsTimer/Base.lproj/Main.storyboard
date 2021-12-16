@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Lf-uz-81X">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalNotificationsTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0OK-Wh-0hp">
+                                <rect key="frame" x="0.0" y="128" width="414" height="216"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time: 5 Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waN-6i-yyg">
+                                <rect key="frame" x="20" y="806" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 minutes timer set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s93-Gv-6Kf">
+                                <rect key="frame" x="20" y="564" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timer ends at" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hS-x7-m7f">
+                                <rect key="frame" x="20" y="610" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 : 20 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-8E-I0q">
+                                <rect key="frame" x="20" y="650" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEm-zT-uad">
+                                <rect key="frame" x="158.5" y="364" width="97" height="31"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Timer"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startTimerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zx7-gC-IEM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.082127309305454199" green="0.063594309521319878" blue="0.16322896938131315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="waN-6i-yyg" secondAttribute="trailing" constant="20" id="1sb-QF-dcD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zfb-8E-I0q" secondAttribute="trailing" constant="20" id="5MS-Wm-OtA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9hS-x7-m7f" secondAttribute="trailing" constant="20" id="Q4F-72-0M8"/>
+                            <constraint firstItem="GEm-zT-uad" firstAttribute="top" secondItem="0OK-Wh-0hp" secondAttribute="bottom" constant="20" id="WLf-6Q-WLf"/>
+                            <constraint firstItem="zfb-8E-I0q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XS3-2W-AUn"/>
+                            <constraint firstItem="9hS-x7-m7f" firstAttribute="top" secondItem="s93-Gv-6Kf" secondAttribute="bottom" constant="10" id="cte-iT-Hpl"/>
+                            <constraint firstItem="0OK-Wh-0hp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="dIZ-6L-cNv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="waN-6i-yyg" secondAttribute="bottom" constant="20" id="iAy-Be-89C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s93-Gv-6Kf" secondAttribute="trailing" constant="20" id="j3A-FH-UNY"/>
+                            <constraint firstItem="0OK-Wh-0hp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j3s-qs-d1D"/>
+                            <constraint firstItem="waN-6i-yyg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="l2v-4a-uub"/>
+                            <constraint firstItem="GEm-zT-uad" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lfL-Jg-PFD"/>
+                            <constraint firstItem="waN-6i-yyg" firstAttribute="top" secondItem="zfb-8E-I0q" secondAttribute="bottom" constant="120" id="nrL-WW-ZIV"/>
+                            <constraint firstItem="s93-Gv-6Kf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="v8y-TQ-KiV"/>
+                            <constraint firstItem="0OK-Wh-0hp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wsu-aX-JjD"/>
+                            <constraint firstItem="zfb-8E-I0q" firstAttribute="top" secondItem="9hS-x7-m7f" secondAttribute="bottom" constant="10" id="x7q-U6-R7f"/>
+                            <constraint firstItem="9hS-x7-m7f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zj0-ii-NAv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yya-cX-5Qq">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="list.bullet" catalog="system" id="Vyo-Uj-5GC">
+                            <connections>
+                                <segue destination="RSY-Ma-bCA" kind="presentation" id="39A-XC-JF2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LTF-uI-S3B">
+                            <connections>
+                                <action selector="newDayButton:" destination="BYZ-38-t0r" id="kfO-7k-hWY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="endTimeLabel" destination="zfb-8E-I0q" id="try-SR-W8e"/>
+                        <outlet property="startTimerButton" destination="GEm-zT-uad" id="Kwv-dt-boa"/>
+                        <outlet property="timePicker" destination="0OK-Wh-0hp" id="JBP-SJ-Jz9"/>
+                        <outlet property="timerEndsLabel" destination="9hS-x7-m7f" id="KKX-Ya-H0w"/>
+                        <outlet property="timerSetLabel" destination="s93-Gv-6Kf" id="coZ-vU-3fU"/>
+                        <outlet property="totalTimeLabel" destination="waN-6i-yyg" id="VPs-JK-O8y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="67.633928571428569"/>
+        </scene>
+        <!--Timers Log-->
+        <scene sceneID="8p6-ad-n0w">
+            <objects>
+                <viewController id="Xyg-zk-IVE" customClass="LogsViewController" customModule="LocalNotificationsTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IH7-fm-oeO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AZ-fP-fUu">
+                                <rect key="frame" x="20" y="96" width="374" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7TL-wg-M88"/>
+                        <color key="backgroundColor" red="0.12964349162292443" green="0.10038790267715934" blue="0.25766792682686235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9AZ-fP-fUu" firstAttribute="top" secondItem="7TL-wg-M88" secondAttribute="top" constant="40" id="6US-T0-bwl"/>
+                            <constraint firstItem="9AZ-fP-fUu" firstAttribute="leading" secondItem="7TL-wg-M88" secondAttribute="leading" constant="20" id="Jlm-ol-psS"/>
+                            <constraint firstItem="7TL-wg-M88" firstAttribute="trailing" secondItem="9AZ-fP-fUu" secondAttribute="trailing" constant="20" id="vbx-BK-HTb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Timers Log" id="k1t-tw-JAR"/>
+                    <connections>
+                        <outlet property="logsLabel" destination="9AZ-fP-fUu" id="LZO-gy-QI4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4X-Fk-CTL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2613.04347826087" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4rl-MR-Omv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Lf-uz-81X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rDw-XJ-HQg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3KW-ki-v6J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3C-jc-iqq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WUX-Aw-bBn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RSY-Ma-bCA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="asg-fC-Ft8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xyg-zk-IVE" kind="relationship" relationship="rootViewController" id="VK4-Jv-p4O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lre-ao-mub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702.8985507246377" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
